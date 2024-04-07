@@ -1,5 +1,4 @@
-Attribute VB_Name = "Module1"
-Sub stockmarket()
+Sub stockmarket2()
     Dim tickersymbol As String
     Dim YearChange As Double
     Dim PercentageChange As Double
@@ -107,12 +106,13 @@ Sub stockmarket()
         End If
         ' Output the maximum percentage change and corresponding ticker symbol to cells T2 and U2 respectively
         ws.Range("T2").Value = maxTicker
-        ws.Range("U2").Value = maxPercentageChange
+        ws.Range("U2").Value = Format(maxPercentageChange, "0.00")
         ' Output the minimum percentage change and corresponding ticker symbol to cells T3 and U3 respectively
         ws.Range("T3").Value = minTicker
-        ws.Range("U3").Value = minPercentageChange
+        ws.Range("U3").Value = Format(minPercentageChange, "0.00")
         ' Output the maximum total volume and corresponding ticker symbol to cells T4 and U4 respectively
-        ws.Range("T4").Value = maxVol_ticker
-        ws.Range("U4").Value = maxVol
+        ws.Range("T4").Value = Format(maxVol_ticker, "0.00")
+        ws.Range("U4").Value = Format(maxVol, "0.00")
+
     Next ws
 End Sub
