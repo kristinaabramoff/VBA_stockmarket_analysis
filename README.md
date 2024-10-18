@@ -43,6 +43,9 @@ This project was undertaken to develop programming skills in VBA and automate da
 The analysis includes screenshots that showcase the performance of stocks across different years. These screenshots can be found in the repository, illustrating:
 - The stock with the greatest percentage increase, decrease, and total volume per year.
 - The conditional formatting applied to each stock based on price changes.
+  ### example 
+![2019 screenshot](https://github.com/user-attachments/assets/627d20bf-df55-4358-84c0-b289c3e2ff2d)
+
 
 ## Performance Considerations
 
